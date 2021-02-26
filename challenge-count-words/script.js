@@ -1,9 +1,15 @@
 function calculateWords(chapterOfABook) {
-  const wordCount = {};
-
-  // Write your code in here
-
-  return wordCount;
+  return chapterOfABook.split(" ").reduce((acc, curr) => {
+    console.log("acc first", acc);
+    console.log("curr first", curr);
+    if (!acc[curr]) {
+      acc[curr] = 1;
+    } else {
+      acc[curr] = acc[curr] + 1;
+    }
+    console.log("acc last", acc);
+    return acc;
+  }, {});
 }
 
 calculateWords(getDraculaChapterOne());
