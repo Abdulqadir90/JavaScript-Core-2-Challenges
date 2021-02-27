@@ -13,10 +13,33 @@
       crossorigin="anonymous"
     />
     <title>Fastest Presser Game</title>
+    <style>
+      html {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="content"></div>
+    <div class="content">
+      <input type="text" class="seconds" />
+      <button onclick="startGame()">Start game</button>
+
+      <div class="content-players">
+        <div>
+          <h1>Letter S</h1>
+          <p class="letter-s"></p>
+        </div>
+        <div>
+          <h1>Letter L</h1>
+          <p class="letter-l"></p>
+        </div>
+        <div class="result"></div>
+      </div>
+    </div>
   </body>
 
   <script src="script.js"></script>
